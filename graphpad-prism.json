@@ -1,0 +1,188 @@
+{
+    "title": "GraphPad Prism (com.graphpad.prism)",
+    "description": "Preference settings for GraphPad Prism. Jamf Pro supports many but not all elements and options here: https://github.com/json-editor/json-editor.",
+    "__feedback": "support@graphpad.com",
+    "properties": {
+        "check-for-updates": {
+            "title": "Check for updatees",
+            "description": "Automatically check for updates.",
+            "property_order": 5,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key name: check-for-updates"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "login-url": {
+            "title": "Login URL",
+            "description": "URL for the login server when using local LabArchives installation (rare).",
+            "property_order": 10,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: login-url"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "api-url": {
+            "title": "API URL",
+            "description": "URL for LabArchives server when using local LabArchives installation (rare).",
+            "property_order": 15,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: api-url"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "browse-url": {
+            "title": "Browse URL",
+            "description": "This URL is opened on clicking Browse menu item in LA toolbar menu.",
+            "property_order": 20,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: browse-url"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "error-connection": {
+            "title": "Error connection alert text",
+            "description": "Alert text when no connection to labarchives server is established. Overrides the usual message. Useful if you want to include an IT contact in the message.",
+            "property_order": 25,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: error-connecting"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "try-account-blurb": {
+            "title": "Try account blurb",
+            "description": "Short text, displayed in Try account of Login to labarchives dialog. Useful if you don't want people using a demo account, because they have access to an institutional account.",
+            "property_order": 30,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: try-account-blurb"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "measure-units": {
+            "title": "Measure units",
+            "description": "Measure units to use in Prism. Could be imperial or metric. Default settings is imperial (inches).",
+            "property_order": 35,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: measure-units"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "module-file": {
+            "title": "Module File",
+            "description": "(Folder) is the folder name inside the Prism/Module folder to custom resource DLL file to load (e.g. Japanese translation or custom equations library).",
+            "property_order": 40,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: module-file"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "preferences-read-only": {
+            "title": "Preferences Read Only",
+            "description": "Do not overwrite preferences on exiting Prism. This lets everyone start with a standard set of preferences. This might be sueful, for example, in a teaching lab.",
+            "property_order": 45,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key name: preferences-read-only"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "serial-number": {
+            "title": "Serial number",
+            "description": "Default serial number. If Prism is not activated, this serial number will be prefilled in the Activation dialog, step Enter Serial Number.",
+            "property_order": 50,
+            "type": "string",
+            "options": {
+                "infoText": "Key name: serial-number"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "silent-activation": {
+            "title": "Silent Activation",
+            "description": "If set to true, Prism will attempt to activate the license silently, without requiring that the user do anything. The default is to not activate silently",
+            "property_order": 55,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key name: silent-activation"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "request-timeout": {
+            "title": "Disk Cache Size",
+            "description": "The timeout parameter applies to all Internet requests where Prism has to wait for a response, which includes manual activation, silent activation, phone home, web updates and LabArchives.",
+            "default": 60000,
+            "property_order": 60,
+            "type": "integer",
+            "options": {
+                "infoText": "Key name: request-timeout"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        }
+    }
+}
